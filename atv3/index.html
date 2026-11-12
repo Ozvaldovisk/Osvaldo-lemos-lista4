@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03 - detalhaPostagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        #listaPosts {
+            display: none; 
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .post-item {
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .post-item:hover {
+            background-color: #e9ecef;
+        }
+        .post-title {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        #detalhesPost {
+            display: none; 
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #0056b3;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+        .secao-comentarios {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+        .comentario {
+            background-color: #fff;
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .comentario strong {
+            color: #555;
+            font-size: 14px;
+        }
+        .comentario p {
+            margin: 5px 0 0 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Exercício 03 - detalhaPostagem</h1>
+
+        <div>
+            <label for="selectUsuario">Escolha um autor:</label>
+            <select id="selectUsuario">
+                <option value="">Carregando usuários...</option>
+            </select>
+        </div>
+
+        <div id="listaPosts">
+            <h3>Postagens de <span id="nomeAutor"></span>:</h3>
+            <div id="containerPosts"></div>
+        </div>
+
+        <div id="detalhesPost">
+            <h2 id="tituloDetalhe"></h2>
+            <p id="corpoPost"></p>
+            <div class="secao-comentarios">
+                <h3>Comentários:</h3>
+                <div id="containerComentarios"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

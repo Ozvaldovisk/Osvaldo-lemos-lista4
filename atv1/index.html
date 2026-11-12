@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 - buscaCep</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .container {
+            max-width: 600px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; 
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #999;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #d0d0d0;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            display: none; 
+        }
+        .erro {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Exercício 01 - buscaCep</h1>
+        
+        <p><strong>buscaCEP</strong></p>
+
+        <label for="cepInput">Digite o CEP </label>
+        <input type="text" id="cepInput" placeholder="Somente números">
+        
+        <button id="btnBuscar">Buscar Endereço</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
